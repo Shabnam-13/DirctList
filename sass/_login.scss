@@ -1,0 +1,196 @@
+#login{
+    .image{
+        position: relative;
+        background-image: url("../img/bg-login.jpg");
+        max-width          : 100%;
+        height: 800px;
+        background-size    : cover;
+        background-position: center center;
+        background-repeat  : no-repeat;
+        .search{
+            position: absolute;
+            top: 50%;
+            transform: translatey(-50%);
+            text-align: center;
+            padding: 3rem;
+            img{
+                margin-bottom: 1.5rem;
+            }
+            .text{
+                color: white;
+                h3{
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    margin-bottom: 1rem;
+                }
+                p{
+                    margin-bottom: 1.3rem;
+                }
+                a{
+                    text-transform: uppercase;
+                    color: white;
+                    text-decoration: none;
+                    background-color: $greenColor;
+                    padding: 13px 20px;
+                    border-radius: 3px;
+                    transition: transform 0.2s linear;
+                    font-size: 0.8rem;
+                    font-weight: 600; 
+                    display: inline-block;
+                    &:hover{
+                            transform: translateY(-3px);
+                            transition: transform 0.2s linear;
+                        }
+                        &:active{
+                            background-color: #24a46d;
+                            border-color: #2dce89;
+                        }
+                    }                   
+
+                }
+            }
+        }
+    .signIn{
+        text-align: center;
+        margin-top: 4rem;
+        h2{
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            color: $headingColor;
+        }
+        p{
+            margin-bottom: 2rem;
+        }
+        .form{
+            box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07)!important;
+            color: white;
+        .with{
+            padding: 2rem 6rem;
+            h6{
+                color:$headingColor;
+                font-weight: 700;
+                margin-bottom: 1.5rem;   
+            }
+            .soc-net{
+                    a{
+                        margin-right: 0.5rem;
+                        box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07)!important;
+                        text-decoration: none;
+                        color: $mainColor;
+                        padding: 12px 25px;
+                        border-radius: 5px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        font-size: 0.8rem;
+                        transition: transform 0.2s linear;                    
+                        &:hover{
+                            color: black;
+                            transition: transform 0.2s linear; 
+                        }
+                        i{
+                            font-size: 0.8rem;
+                            margin-right: 0.5rem;
+                            font-weight: 400;
+                        }
+                    }
+                
+            }
+        }
+        .credentials{
+            padding: 3rem 2rem;
+            position: relative;
+            background-color: #f4f5f7;
+            h6{
+                color:$headingColor;
+                margin-bottom: 1.5rem;
+                font-weight: 700;
+            }
+            form{
+                .myInput{
+                    width: 90%;
+                    border: none;
+                    background-color: white;
+                    padding: 10px;
+                    border-radius: 5px;
+                    margin-bottom: 1.5rem;
+                    box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);                    
+                    &::placeholder{
+                    text-transform: capitalize;
+                    color: #adb5bd;
+                    padding-left: 12%;
+                    }
+                }
+                .email{
+                    position: relative;
+                    i{
+                        position: absolute;
+                        top: 22%;
+                        left: 10%;
+                        transform: translateX(-22%);
+                        color: black;
+                        transform: translateX(-10%);
+                        color: #adb5bd;
+                    }
+                }
+                .password{
+                    position: relative;
+                    i{
+                        position: absolute;
+                        top: 22%;
+                        left: 10%;
+                        transform: translateX(-22%);
+                        color: black;
+                        transform: translateX(-10%);
+                        color: #adb5bd;
+                        
+                    }
+                }
+                .checkBox{
+                    position: absolute;
+                    left: 10%;
+                    label{
+                        color: rgba(0, 0, 0, 0.74);
+                    }
+                }
+                button{
+                    border: none;
+                    padding: 0;
+                    margin-top: 3rem;
+                    a{
+                        text-decoration: none;
+                        background-color: $mainColor;
+                        color: white;
+                        padding: 13px 20px;                        
+                        background-color: $mainColor;
+                        text-transform: uppercase;
+                        border-radius: 3px;
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                        transition: transform 0.2s linear;
+                }
+                &:hover{
+                    transform: translateY(-3px);
+                    transition: transform 0.2s linear;                        
+                }
+                &:active{
+                    background-color: #324cdd;
+                    border-color: #5e72e4;
+                  }
+              }
+            }
+        }
+    }
+}
+
+    @media only screen and (max-width: 992px) {
+        .image{
+            display: none;
+        }
+        .signIn{
+            width: 100%;
+            .with{
+                padding: 2rem 0.5rem !important;
+            }
+        }
+    }
+}

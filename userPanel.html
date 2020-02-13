@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="userPanel">
+    <header>
+        <div id="myNav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand myBrand" href="home.html">
+                                <img src="img/logo-white.png">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Home
+                                            <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="home.html">Home Version 1</a>
+                                            <a class="dropdown-item" href="userPanel.html">Home Version 2</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            Listing
+                                            <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <div class="menu-item">
+                                                <a class="dropdown-item dropdown" href="#"
+                                                    id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="false">List layout<i class="fas fa-angle-right"></i></a>
+                                                <ul>
+                                                    <li> <a href="layout.html">with sidebar</a></li>
+                                                    <li> <a href="#">full width</a></li>
+                                                    <li> <a href="#">full width+map</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-item">
+                                                <a class="dropdown-item" href="#">grid layout<i class="fas fa-angle-right"></i></a>
+                                                <ul>
+                                                    <li> <a href="#">with sidebar</a></li>
+                                                    <li> <a href="#">full width</a></li>
+                                                    <li> <a href="#">full width+map</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-item">
+                                                <a class="dropdown-item" href="#">half screen map<i class="fas fa-angle-right"></i></a>
+                                                <ul>
+                                                    <li> <a href="#">with sidebar</a></li>
+                                                    <li> <a href="#">full width</a></li>
+                                                    <li> <a href="#">full width+map</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="menu-item">
+                                                <a class="dropdown-item" href="#">detail<i class="fas fa-angle-right"></i></a>
+                                                <ul>
+                                                    <li> <a href="#">with sidebar</a></li>
+                                                    <li> <a href="#">full width</a></li>
+                                                    <li> <a href="#">full width+map</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            user panel
+                                            <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="#">dashboard</a>
+                                            <a class="dropdown-item" href="#">message</a>
+                                            <a class="dropdown-item" href="#">booking</a>
+                                            <a class="dropdown-item" href="#">reviews</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            pages
+                                            <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="pricing.html">pricing</a>
+                                            <a class="dropdown-item" href="#">invoice</a>
+                                            <div class="menu-item">
+                                                <a class="dropdown-item" href="#">blog<i class="fas fa-angle-right"></i></a>
+                                                <ul>
+                                                    <li> <a href="blog.html">list</a></li>
+                                                    <li> <a href="#">detail</a></li>
+                                                </ul>
+                                            </div>
+                                            <a class="dropdown-item" href="#">about</a>
+                                            <a class="dropdown-item" href="#">contact</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            session
+                                            <i class="fas fa-angle-down"></i>
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                            <a class="dropdown-item" href="login.html">login</a>
+                                            <a class="dropdown-item" href="#">register</a>
+                                            <a class="dropdown-item" href="#">forgot password</a>
+                                            <a class="dropdown-item" href="#">coming soon</a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                            role="button" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            add listing
+                                            <i class="fas fa-plus"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<main> 
+    <section id="intro">
+        <div class="image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="title">
+                            <div class="plans">
+                                <h2>Plans & Pricing</h2>
+                                <p>Most Affordable Prices</p>
+                            </div>
+                            <div class="breadcrumb">
+                                <p>Home > Listings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+        <section id="dingloyPlace">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="content">
+                        <div class="address mb-5">
+                            <h3 class="mb-3">Dingloy Place <span>open</span></h3>
+                            <p class="mb-3">Dingloy Place, Remington, London, EC1V 8BP, United Kingdom</p>
+                            <span>dinner</span>
+                            <span>hotel</span>
+                            <span>sea food</span>
+                        </div>
+                        <div class="buttons mb-5">
+                            <a class="active" href="#" data-index="1"><i class="fas fa-info-circle"></i> About</a>
+                            <a href="#" data-index="2"><i class="fas fa-map-marker-alt"></i> Location</a>
+                            <a href="#" data-index="3"><i class="far fa-money-bill-alt"></i> Pricing</a>
+                            <a href="#" data-index="4"><i class="far fa-money-bill-alt"></i> Reviews</a>
+                        </div>
+                        <div class="text">
+                            <div class="show about myActive mb-5" data-index="1">
+                                <div class="subject">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum doloribus
+                                        repudiandae nulla odit, omnis ex, a assumenda fugiat quasi neque necessitatibus
+                                        fugit maiores quis. Quo dolor minus pariatur natus!</p>
+                                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat rerum doloribus
+                                        repudiandae nulla odit, omnis ex, a assumenda fugiat quasi neque necessitatibus
+                                        fugit maiores quis. Quo dolor minus pariatur natus! Lorem ipsum dolor sit amet
+                                        consectetur adipisicing elit. Blanditiis quis laudantium est pariatur, harum
+                                        laboriosam odit delectus vitae minima dolorem ipsam repudiandae sunt non.
+                                        Dolorem adipisci voluptates doloribus voluptatum nihil.</p>
+                                </div>
+                                <h3 class="mb-4 mt-4">Contact Info</h3>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="info m-0"><i class="fas fa-phone-alt"></i> RECEPTION.</p>
+                                        <p>+123 123 456 45</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="info m-0"><i class="fas fa-phone-alt"></i> FOR COMPLAINTS.</p>
+                                        <p>+123 123 456 45</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <p class="info m-0"><i class="fas fa-phone-alt"></i> SUPPORT.</p>
+                                        <p>+123 123 456 45</p>
+                                    </div>
+                                </div>
+                                <div class="features">
+                                    <h3 class="mb-4 mt-4">Features</h3>
+                                    <span class="mr-1 mb-1">SWIMMING POOL</span>
+                                    <span class="mr-1 mb-1">FREE WIFI INTERNET ACCESS INCLUDED</span>
+                                    <span class="mr-1 mb-1">FREE PARKING</span>
+                                    <span class="mr-1 mb-1">SWIMMINGPOOL OUTDOOR</span>
+                                    <span class="mr-1 mb-1">FAMILY ROOMS</span>
+                                    <span class="mr-1 mb-1">NON SMOKING ROOMS</span>
+                                </div>
+                            </div>
+                            <div class="show location mb-5" data-index="2">
+                                <p>Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia
+                                    cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi
+                                    qui.</p>
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12152.882708217361!2d49.86419305!3d40.40396185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2s!4v1580126810997!5m2!1str!2s" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                            </div>
+                            <div class="show pricing mb-5" data-index="3">
+                                <div class="menu">
+                                    <h5>Classic Burger</h5>
+                                    <p>Beef, salad, mayonnaise, spicey relish, cheese</p>
+                                    <span>$6</span>
+                                </div>
+                                <div class="menu">
+                                    <h5>Cheddar Burger</h5>
+                                    <p>Cheddar cheese, lettuce, tomato, onion, dill pickles</p>
+                                    <span>$6</span>
+                                </div>
+                                <div class="menu">
+                                    <h5>Veggie Burger</h5>
+                                    <p>Panko crumbed and fried, grilled peppers and mushroom</p>
+                                    <span>$6</span>
+                                </div>
+                                <div class="menu">
+                                    <h5>Chicken Burger</h5>
+                                    <p>Cheese, chicken fillet, avocado, bacon, tomatoes, basil</p>
+                                    <span>$6</span>
+                                </div>
+                            </div>
+                            <div class="show reviews mb-5" data-index="4">
+                                <div class="row mb-5">
+                                    <div class="col-lg-2 col-md-2 col-sm-12">
+                                        <div class="img">
+                                            <img src="img/thumb-1.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-12">
+                                        <div class="comment">
+                                            <h5>Betty J. Darby</h5>
+                                            <p>15 Minutes Ago</p>
+                                            <p>Lorem Ipsum is simply dummy text of the pr make but also the leap
+                                                into electronic typesetting, remaining essentially unchanged. It was
+                                                popularised in the 1960s with the release of Letraset sheets
+                                                containing Lorem Ipsum passages, and more recently with desktop
+                                                publishing software like Aldus PageMaker including versions of Lorem
+                                                Ipsum.</p>
+                                            <a href="#">HELPFUL?</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col-lg-2 col-md-2 col-sm-12">
+                                        <div class="img">
+                                            <img src="img/thumb-2.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-12">
+                                        <div class="comment">
+                                            <h5>Becky Laurit</h5>
+                                            <p>15 Minutes Ago</p>
+                                            <p>Lorem Ipsum is simply dummy text of the pr make but also the leap
+                                                into electronic typesetting, remaining essentially unchanged. It was
+                                                popularised in the 1960s with the release of Letraset sheets
+                                                containing Lorem Ipsum passages, and more recently with desktop
+                                                publishing software like Aldus PageMaker including versions of Lorem
+                                                Ipsum.</p>
+                                            <a href="#">HELPFUL?</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col-lg-2 col-md-2 col-sm-12">
+                                        <div class="img">
+                                            <img src="img/thumb-3.jpg">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-10 col-md-10 col-sm-12">
+                                        <div class="comment">
+                                            <h5>Glenda Grandy</h5>
+                                            <p>15 Minutes Ago</p>
+                                            <p>Lorem Ipsum is simply dummy text of the pr make but also the leap
+                                                into electronic typesetting, remaining essentially unchanged. It was
+                                                popularised in the 1960s with the release of Letraset sheets
+                                                containing Lorem Ipsum passages, and more recently with desktop
+                                                publishing software like Aldus PageMaker including versions of Lorem
+                                                Ipsum.</p>
+                                            <a href="#">HELPFUL?</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bookNow">
+                        <form>
+                            <input type="text" placeholder="Start date" value="06/18/2018">
+                            <select name="cars">
+                                <option value="volvo">Guest</option>
+                                <option value="saab">One</option>
+                                <option value="fiat">Two</option>
+                                <option value="audi">Three</option>
+                                <option value="audi">Four</option>
+                              </select>
+                            <a href="#">BOOK NOW</a>
+                        </form>
+                        <div class="people">
+                            <h4 class="mb-4">Key People</h4>
+                            <img src="img/thumb-1.jpg">
+                            <h5>Victoria Benson</h3>
+                            <p><i class="fas fa-phone-alt"></i> (123) 123-456</p> 
+                            <p><i class="fas fa-external-link-alt"></i> http://example.com</p>
+                            <p><i class="far fa-envelope"></i> victoria@victoria.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+</main>
+<footer>
+    <section id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="info">
+                        <img src="img/logo-white.png">
+                        <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat
+                            eros.
+                            Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
+                        <div class="contact">
+                            <ul>
+                                <li>12345 Little Lonsdale St, Melbourne</li>
+                                <li>Phone: (123) 123-456</li>
+                                <li>E-Mail:office@example.com</li>
+                            </ul>
+                        </div>
+                        <div class="soc-net">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fas fa-basketball-ball"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <a href="#">Login</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <a href="#">Sign Up</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <a href="#">Forgot Password</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <a href="#">Add Listing</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <a href="#">Pricing</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <a href="#">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <a href="#">Profile</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <a href="#">Blog</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <a href="#">Invoice</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <a href="#">Booking</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-angle-right"></i>
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright">
+                        <p>© 2019 DirectList. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/25a8a55cf9.js" crossorigin="anonymous"></script>
+    <script src="js/main .js"></script>
+</body>
+</html>

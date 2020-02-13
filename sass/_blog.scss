@@ -1,0 +1,139 @@
+#blog {
+    font-family: $fontFamily;
+    @extend %myNavExtend;
+    @extend %introExtend;
+
+    #blogList {
+        margin: 5rem 0;
+
+        .mainCard {
+            @extend %cardExtend;
+        }
+
+        .sidebarCard {
+            .card {
+                border: none;
+
+                .form {
+                    position: relative;
+
+                    input {
+                        padding      : 10px;
+                        width        : 100%;
+                        border-radius: 5px;
+                        border       : 1px solid #8898aa;
+                        margin-bottom: 1.5rem;
+
+                        &::placeholder {
+                            padding-left: 18px;
+                            color       : #8898aa;
+                        }
+                    }
+
+                    i {
+                        position : absolute;
+                        top      : 34%;
+                        transform: translateY(-50%);
+                        left     : 8px;
+                        font-size: 1rem;
+                        color    : #8898aa;
+                    }
+
+                }
+
+                h4 {
+                    font-weight  : 800;
+                    margin-bottom: 1rem;
+                    color        : $headingColor;
+                }
+
+                .cardImg {
+                    padding      : 25px 0;
+                    border-bottom: 1px solid #8898aa60;
+
+                    .card-body {
+                        padding: 0 20px;
+
+                        h5 {
+                            margin-bottom: 0.5rem;
+
+                            a {
+                                text-decoration: none;
+                                font-size      : 1rem;
+                                font-weight    : 700;
+                                color          : #333;
+                                transition     : all 0.1s linear;
+
+                                &:hover {
+                                    color     : #66676b;
+                                    transition: all 0.1s linear;
+                                }
+                            }
+                        }
+                    }
+                    &:last-child{
+                        border-bottom: 0;
+                    }
+                }
+
+                .soc-net {
+                    h4 {
+                        font-weight: 800;
+                        margin     : 1.5rem 0;
+                        color      : $headingColor;
+                    }
+
+                    ul {
+                        list-style-type: none;
+                        padding        : 0;
+
+                        li {
+                            display     : inline-block;
+                            margin-right: 5px;
+
+                            a {
+                                text-decoration : none;
+                                display         : inline-block;
+                                width           : 35px;
+                                height          : 35px;
+                                line-height     : 35px;
+                                color           : white;
+                                background-color: #1DA1F2;
+                                text-align      : center;
+                                border-radius   : 5px;
+                                transition      : all 0.1s linear;
+
+                                i {
+                                    font-size: 0.875rem;
+                                }
+
+                                &:hover {
+                                    transform : translateY(-2px);
+                                    transition: all 0.1s linear;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .sidebarCard{
+                .card{
+                    .cardImg{
+                        img{
+                            width: 90px;
+                        }
+                        .card-body{
+                            margin-left: -15%;
+                            padding: 10px 0px;
+                        }
+                    }
+                }
+            }
+        }
+          
+    }
+    @extend %footerExtend;
+}

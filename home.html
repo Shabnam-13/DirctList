@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="home">
+        <header>
+            <div id="myNav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav class="navbar navbar-expand-lg navbar-light">
+                                <a class="navbar-brand myBrand" href="home.html">
+                                    <img src="img/logo-white.png">
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fas fa-bars"></i>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                Home
+                                                <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="home.html">Home Version 1</a>
+                                                <a class="dropdown-item" href="userPanel.html">Home Version 2</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                Listing
+                                                <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <div class="menu-item">
+                                                    <a class="dropdown-item dropdown" href="#"
+                                                        id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">List layout<i class="fas fa-angle-right"></i></a>
+                                                    <ul>
+                                                        <li> <a href="layout.html">with sidebar</a></li>
+                                                        <li> <a href="#">full width</a></li>
+                                                        <li> <a href="#">full width+map</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <a class="dropdown-item" href="#">grid layout<i class="fas fa-angle-right"></i></a>
+                                                    <ul>
+                                                        <li> <a href="#">with sidebar</a></li>
+                                                        <li> <a href="#">full width</a></li>
+                                                        <li> <a href="#">full width+map</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <a class="dropdown-item" href="#">half screen map<i class="fas fa-angle-right"></i></a>
+                                                    <ul>
+                                                        <li> <a href="#">with sidebar</a></li>
+                                                        <li> <a href="#">full width</a></li>
+                                                        <li> <a href="#">full width+map</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="menu-item">
+                                                    <a class="dropdown-item" href="#">detail<i class="fas fa-angle-right"></i></a>
+                                                    <ul>
+                                                        <li> <a href="#">with sidebar</a></li>
+                                                        <li> <a href="#">full width</a></li>
+                                                        <li> <a href="#">full width+map</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                user panel
+                                                <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="#">dashboard</a>
+                                                <a class="dropdown-item" href="#">message</a>
+                                                <a class="dropdown-item" href="#">booking</a>
+                                                <a class="dropdown-item" href="#">reviews</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                pages
+                                                <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="pricing.html">pricing</a>
+                                                <a class="dropdown-item" href="#">invoice</a>
+                                                <div class="menu-item">
+                                                    <a class="dropdown-item" href="#">blog<i class="fas fa-angle-right"></i></a>
+                                                    <ul>
+                                                        <li> <a href="blog.html">list</a></li>
+                                                        <li> <a href="#">detail</a></li>
+                                                    </ul>
+                                                </div>
+                                                <a class="dropdown-item" href="#">about</a>
+                                                <a class="dropdown-item" href="#">contact</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                session
+                                                <i class="fas fa-angle-down"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                                <a class="dropdown-item" href="login.html">login</a>
+                                                <a class="dropdown-item" href="#">register</a>
+                                                <a class="dropdown-item" href="#">forgot password</a>
+                                                <a class="dropdown-item" href="#">coming soon</a>
+                                            </div>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                                role="button" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false">
+                                                add listing
+                                                <i class="fas fa-plus"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="introHome">
+                <div class="image">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="title">
+                                    <div class="find">
+                                        <h2>Find Nearby Attractions</h2>
+                                        <h4>Expolore top-rated attractions, activities and more</h4>
+                                    </div>
+                                    <div class="search">
+                                        <form class="myForm">
+                                            <div class="looking">
+                                                <input type="text" placeholder="What are you looking for?">
+                                            </div>
+                                            <div class="location mx-sm-3">
+                                                <input type="text" placeholder="Location">
+                                                <a href="#">
+                                                    <i class="fas fa-map-marker-alt"></i>
+                                                </a>
+                                            </div>
+                                            <div class="select">
+                                                <select>
+                                                    <option>All Categories</option>
+                                                    <option>Shops</option>
+                                                    <option>Hotels</option>
+                                                    <option>Restaurants</option>
+                                                    <option>Fitness</option>
+                                                    <option>Events</option>
+                                                </select>
+                                            </div>
+                                            <button>
+                                                <a href="#">Search</a>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="categories">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="title">
+                                <h2>Popular Categories</h2>
+                                <p>Browse the most desirable categories</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/cat-img-1.jpg">
+                                    <div class="icon">
+                                        <i class="fa-2x fa fa-glass"></i>
+                                        <a href="#">
+                                            <h3>Eat & Drink</h3>
+                                        </a>
+                                        <span>
+                                            <small>127 listings</small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/cat-img-6.jpg">
+                                    <div class="icon">
+                                        <i class="fa-2x fa fa-bed"></i>
+                                        <a href="#">
+                                            <h3>Hotels</h3>
+                                        </a>
+                                        <span>
+                                            <small>64 listings</small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/cat-img-5.jpg">
+                                    <div class="icon">
+                                        <i class="fa-2x fa fa-shopping-bag"></i>
+                                        <a href="#">
+                                            <h3>Shops</h3>
+                                        </a>
+                                        <span>
+                                            <small>14 listings</small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/cat-img-4.jpg">
+                                    <div class="icon">
+                                        <i class="fa-2x fa fa-calendar"></i>
+                                        <a href="#">
+                                            <h3>Events</h3>
+                                        </a>
+                                        <span>
+                                            <small>67 listings</small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/cat-img-3.jpg">
+                                    <div class="icon">
+                                        <i class="fa-2x fa fa-glass"></i>
+                                        <a href="#">
+                                            <h3>Fitness</h3>
+                                        </a>
+                                        <span>
+                                            <small>27 listings</small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="image">
+                                    <img src="img/cat-img-2.jpg">
+                                    <div class="icon">
+                                        <i class="fa-2x fa fa-glass"></i>
+                                        <a href="#">
+                                            <h3>Nightlife</h3>
+                                        </a>
+                                        <span>
+                                            <small>22 listings</small>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="visitedPlaces">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="title">
+                                <h2>Most Visited Places</h2>
+                                <p>Discover top-rated local businesses</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-11">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="img/most-img-2.jpg" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Cafe Bar </h3>
+                                            <p class="card-text"> Wall Street, New York</p>
+                                            <span class="left">Hotels</span>
+                                            <span class="right">Open</span>
+                                        </div>
+                                        <div class="logo">
+                                            <img src="img/logo-3.png">
+                                        </div>
+                                        <span class="heart">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="img/most-img-3.jpg" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Milky Ducth </h3>
+                                            <p class="card-text"> MayLand Square, LA </p>
+                                            <span class="left">Concert</span>
+                                            <span class="right">Coming Soon</span>
+                                        </div>
+                                        <div class="logo">
+                                            <img src="img/logo-2.png">
+                                        </div>
+                                        <span class="heart">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="img/most-img-4.jpg" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Cafe Bar </h3>
+                                            <p class="card-text"> Wall Street, New York</p>
+                                            <span class="left">Eat & Drink</span>
+                                            <span class="right">Open</span>
+                                        </div>
+                                        <div class="logo">
+                                            <img src="img/logo-1.png">
+                                        </div>
+                                        <span class="heart">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="img/most-img-6.jpg" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">NYC </h3>
+                                            <p class="card-text"> Mill Dee, New York</p>
+                                            <span class="left">Airport</span>
+                                            <span class="right">Now Open</span>
+                                        </div>
+                                        <div class="logo">
+                                            <img src="img/logo-1.png">
+                                        </div>
+                                        <span class="heart">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="img/most-img-7.jpg" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Groos Day </h3>
+                                            <p class="card-text"> 71,Rowling Street, New York</p>
+                                            <span class="left">Eat & Drink</span>
+                                            <span class="right">Closed</span>
+                                        </div>
+                                        <div class="logo">
+                                            <img src="img/logo-2.png">
+                                        </div>
+                                        <span class="heart">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card">
+                                        <div class="image">
+                                            <img src="img/most-img-1.jpg" class="card-img-top">
+                                        </div>
+                                        <div class="card-body">
+                                            <h3 class="card-title">Donuts Hub </h3>
+                                            <p class="card-text"> 56,Hihu pora, New York</p>
+                                            <span class="left">Eat&Drink</span>
+                                            <span class="right">Open</span>
+                                        </div>
+                                        <div class="logo">
+                                            <img src="img/logo-4.png">
+                                        </div>
+                                        <span class="heart">
+                                            <i class="far fa-heart"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="vacation">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="title">
+                                <h2>Plan The Vacation of Your Dreams</h2>
+                                <p>Explore some of the best tips from around the world from our partners and friends.
+                                    Discover
+                                    some of the most popular listings in Sydney.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <div class="info">
+                                    <h5>Find Interesting Place</h5>
+                                    <p>Proin dapibus nisl ornare diam varius tempus. Aenean a quam luctus, finibus
+                                        tellus ut,
+                                        convallis eros sollicitudin turpis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="fas fa-phone-square-alt"></i>
+                                </div>
+                                <div class="info">
+                                    <h5>Find Interesting Place</h5>
+                                    <p>Proin dapibus nisl ornare diam varius tempus. Aenean a quam luctus, finibus
+                                        tellus ut,
+                                        convallis eros sollicitudin turpis.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="item">
+                                <div class="icon">
+                                    <i class="fas fa-user-plus"></i>
+                                </div>
+                                <div class="info">
+                                    <h5>Find Interesting Place</h5>
+                                    <p>Proin dapibus nisl ornare diam varius tempus. Aenean a quam luctus, finibus
+                                        tellus ut,
+                                        convallis eros sollicitudin turpis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="team">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="title">
+                                <h2>The Amazing Team</h2>
+                                <p class="text-muted">According to the National Oceanic and Atmospheric Administration,
+                                    Ted, Scambos, NSIDClead
+                                    scentist, puts the potentially record maximum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="image">
+                                <img src="img/thumb-1.jpg">
+                            </div>
+                            <div class="name">
+                                <h5>Ryan Tompson</h5>
+                                <p class="text-muted">Web Developer</p>
+                            </div>
+                            <div class="soc-net">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-basketball-ball"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="image">
+                                <img src="img/thumb-2.jpg">
+                            </div>
+                            <div class="name">
+                                <h5>Ryan Tompson</h5>
+                                <p class="text-muted">Web Developer</p>
+                            </div>
+                            <div class="soc-net">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-basketball-ball"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="image">
+                                <img src="img/thumb-3.jpg">
+                            </div>
+                            <div class="name">
+                                <h5>Ryan Tompson</h5>
+                                <p class="text-muted">Web Developer</p>
+                            </div>
+                            <div class="soc-net">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-basketball-ball"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="image">
+                                <img src="img/thumb-4.jpg">
+                            </div>
+                            <div class="name">
+                                <h5>Ryan Tompson</h5>
+                                <p class="text-muted">Web Developer</p>
+                            </div>
+                            <div class="soc-net">
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fas fa-basketball-ball"></i>
+                                            </i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="title">
+                                <h2>Recent Blog</h2>
+                                <p>Hassel Free Service</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="card">
+                                <img src="img/post-1.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Take a Look at Hotels for All Budgets</h5>
+                                    <p class="text-muted">22 August 2018</p>
+                                    <p class="card-text">Sed sed tristique nibh iam porta volutpat finibus. Donec in
+                                        aliquet urneget mattis lorem.
+                                        Pellentesque pellentesque</p>
+                                    <a href="#" class="btn btn-primary">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="card">
+                                <img src="img/post-2.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Take a Look at Hotels for All Budgets</h5>
+                                    <p class="text-muted">22 August 2018</p>
+                                    <p class="card-text">Sed sed tristique nibh iam porta volutpat finibus. Donec in
+                                        aliquet urneget mattis lorem.
+                                        Pellentesque pellentesque</p>
+                                    <a href="#" class="btn btn-primary">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 col-sm-12">
+                            <div class="card">
+                                <img src="img/post-3.jpg" class="card-img-top">
+                                <div class="card-body">
+                                    <h5 class="card-title">Take a Look at Hotels for All Budgets</h5>
+                                    <p class="text-muted">22 August 2018</p>
+                                    <p class="card-text">Sed sed tristique nibh iam porta volutpat finibus. Donec in
+                                        aliquet urneget mattis lorem.
+                                        Pellentesque pellentesque</p>
+                                    <a href="#" class="btn btn-primary">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <section id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="info">
+                                <img src="img/logo-white.png">
+                                <p>Morbi convallis bibendum urna ut viverra. Maecenas quis consequat libero, a feugiat
+                                    eros.
+                                    Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper.</p>
+                                <div class="contact">
+                                    <ul>
+                                        <li>12345 Little Lonsdale St, Melbourne</li>
+                                        <li>Phone: (123) 123-456</li>
+                                        <li>E-Mail:office@example.com</li>
+                                    </ul>
+                                </div>
+                                <div class="soc-net">
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fas fa-basketball-ball"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <i class="fab fa-github"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="menu">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#">Login</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#">Sign Up</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#">Forgot Password</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#">Add Listing</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#">Pricing</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#">About</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="menu">
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#">Profile</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#">Blog</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#">Invoice</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#">Booking</a>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-angle-right"></i>
+                                        <a href="#">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="copyright">
+                                <p>© 2019 DirectList. All Rights Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/25a8a55cf9.js" crossorigin="anonymous"></script>
+    <script src="js/main .js"></script>
+</body>
+
+</html>

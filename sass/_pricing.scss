@@ -1,0 +1,86 @@
+#pricing{
+    font-family: $fontFamily;
+@extend %myNavExtend;
+@extend %introExtend;
+#price{
+    margin:8rem 0;
+    .head{
+       margin-bottom: 3rem;
+        p{
+            font-size: $textFont;
+            text-align: center;
+            color: $mainFontColor;
+        }
+    }
+   .individual{
+       margin-bottom: 2rem;
+       @extend %pricePlansExtend;
+       .choose{
+           a{
+            transition: all 0.1s linear;
+
+               &:hover{
+                   color: white;
+                   background-color: $mainColor;
+                   transition: all 0.1s linear;
+
+               }
+           }
+       }
+   }
+   .professional{
+    margin-bottom: 2rem;
+    @extend %pricePlansExtend;
+    .plans{
+        .type{
+            background-color: $greenColor;
+        }
+        .thePrice{
+            h3{
+                color: $greenColor;
+            }
+        }
+        .choose{
+            a{
+                color: $greenColor;
+                border-color:$greenColor;
+                transition: all 0.1s linear;
+
+                &:hover{
+                    background-color: $greenColor;
+                    color: white;
+                    transition: all 0.1s linear;
+                }
+            }
+        }
+    }
+   }
+   .business{
+    margin-bottom: 2rem;
+    @extend %pricePlansExtend;
+    .plans{
+        .type{
+            background-color: $blueColor;
+        }
+        .thePrice{
+            h3{
+                color: $blueColor;
+            }
+        }
+        .choose{
+            a{
+                color: $blueColor;
+                border-color:$blueColor;
+                transition: all 0.1s linear;
+                &:hover{
+                    background-color: $blueColor;
+                    color: white;
+                    transition: all 0.1s linear;
+                }
+            }
+        }
+    }
+   }
+}
+@extend %footerExtend;
+}

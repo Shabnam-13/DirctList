@@ -1,0 +1,398 @@
+ %myNavExtend{
+    #myNav {
+        position        : absolute;
+        top             : 0;
+        right           : 0;
+        left            : 0;
+        z-index         : 999;
+        background-color: rgba(44, 32, 70, 0.801);
+        .navbar {
+            padding: 0;
+    
+            .navbar-toggler {
+                border   : none;
+                color    : white;
+                font-size: $textFont;
+                margin   : 15px 0;
+                padding  : 10px 15px;
+            }
+            .collapse {
+                justify-content: flex-end;
+                .navbar-nav {
+                    .nav-item {
+                        margin-right: 30px;
+                        padding     : 15px 0;
+                        font-family : $fontFamily;
+                        .nav-link {
+                            color         : white;
+                            text-transform: capitalize;
+                            transition    : all 0.1s linear;
+                            &::after {
+                                content: none;
+                            }
+                            &:hover {
+                                color     : darken(white, 20%);
+                                transition: all 0.2s linear;
+                                transition: all 0.1s linear;
+                            }
+                        }
+                        &:last-child {
+                            .nav-link {
+                                text-transform  : uppercase;
+                                font-size       : 0.850rem;
+                                background-color: #fff;
+                                padding         : 10px;
+                                color           : #5E72E4;
+                                font-weight     : 600;
+                                text-align      : center;
+                                border-radius   : 30px;
+                                width           : 160px;
+                                transition      : all 0.1s linear;
+                                &:hover {
+                                    transform : translateY(-1px);
+                                    color     : #212529;
+                                    transition: all 0.1s linear;
+                                }
+                            }
+                        }
+                        .dropdown-menu {
+                            top   : 65px;
+                            border: none;
+                            min-width: 12rem;
+                            .dropdown-item {
+                                color         : lighten(black, 40%);
+                                text-transform: capitalize;
+                                transition    : all 0.1s linear;
+    
+                                &:hover {
+                                    background-color: unset;
+                                    color           : $headingColor;
+                                    transition      : all 0.1s linear;
+                                }
+                            }
+                            .menu-item{
+                                position: relative;
+                                a{
+                                    position: relative;
+                                    i{
+                                        position: absolute;
+                                        right: 8%;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        transition: right 0.2s linear;
+
+                                    }
+                                    &:hover{
+                                        i{
+                                            right: 5%;
+                                            transition: right 0.2s linear;
+                                        }
+                                    }
+                                }
+                                ul{
+                                visibility: hidden;
+                                position: absolute;
+                                top: 0;
+                                background-color: white;
+                                left: 95%;
+                                margin: 0;
+                                padding: 0;
+                                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.12);
+                                border-radius: 4px;
+                                padding: 12px 20px;
+                                list-style-type: none;
+                                min-width: 10rem;
+                                font-size: 15px;
+                                line-height: 2;
+                                .dropdown-item{
+                                    display: none;
+                                }
+                                li{
+                                    a{
+                                        text-transform: capitalize;
+                                        text-decoration: none;
+                                        color: #666666;
+                                        &:hover {
+                                            background-color: unset;
+                                            color           : $headingColor;
+                                            transition      : all 0.1s linear;
+                                        }
+                                    }
+                                }
+                            }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        @media only screen and (max-width: 992px) {
+            .collapse{
+                .nav-item{
+                    &:last-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .myCollapse{
+        margin: 0.5rem 1rem;
+        padding:0 1rem !important;
+        border-radius: .25rem;
+        background: #5e72e4;
+    }
+    .myDropdown{
+        background-color: $mainColor;
+        .myItem{
+            color: white !important;
+        }
+    }
+    .myDropdownItem{
+        visibility: visible !important;
+        background-color: $mainColor !important;
+        padding-left: 40px !important;
+        left: 10px !important;
+    }
+    .myHoverUl{
+        position: relative !important;
+        top: 0 !important;
+        left: 0 !important;
+        background-color: $mainColor !important;
+        box-shadow: unset !important;
+        border-radius: 0 !important;
+    }
+ }
+%pricePlansExtend{
+    .plans{
+        border: 1px solid #F4F5F7;
+        .type{
+            background-color: $mainColor;
+            text-align: center;
+            padding: 45px;
+            color: white;
+            h3{
+                font-weight: 700;
+            }
+        }
+        .thePrice{
+            text-align: center;
+            color: #5E72E4;
+            padding: 20px;
+            h3{
+                font-weight:600;
+            }
+        }
+        .info{
+            ul{
+                list-style-type: none;
+                text-align: center;
+                padding: 30px;
+                line-height: 2.5;
+                color:$mainFontColor ;
+            }
+        }
+        .choose{
+            padding: 30px;
+            text-align: center;
+            a{
+                text-decoration: none;
+                display: inline-block;
+                font-size: 0.875rem;
+                border: 1px solid #5E72E4;
+                text-transform: uppercase;
+                color: #5E72E4;
+                font-weight: 600;
+                border-radius: 5px;
+                padding: 10px;
+                width: 135px;
+            }
+        }
+    }
+}
+%introExtend{
+    #intro {
+        position: relative;
+        .image {
+            background-image   : url("../img/title-pricing.jpg");
+            max-width          : 100%;
+            height             : 350px;
+            background-size    : cover;
+            background-position: center;
+            background-repeat  : no-repeat;
+            position           : relative;
+            &::before{
+                content         : "";
+                position        : absolute;
+                width: 100%;
+                height: 100%;
+                top             : 0;
+                right           : 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                z-index:9;
+            }
+            .title{
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                top: 200%;
+                z-index: 19;
+                color: white;
+                .plans{
+                    h2{
+                        font-weight: 700;
+                    }
+                }
+                .breadcrumb{
+                    background-color: unset;
+                }
+            
+            }
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        .title{
+            display: block !important;
+            top: 95% !important;
+            .breadcrumb{
+                padding: 0 !important;
+                margin-top: 2rem !important;
+            }
+           
+
+        }
+      }
+    @media only screen and (max-width: 480px) {
+        .image{
+            height: 900px;         
+        }
+      } 
+}
+%footerExtend{
+    #footer{
+        background-color: #5E72E4;
+        padding-top: 65px;
+        color: white;
+        line-height: 1.5;
+        .info{
+            img{
+                margin-bottom: 15px;
+            }
+            .contact{
+                ul{
+                    list-style-type: none;
+                    padding: 0; 
+                }
+            }
+            .soc-net{
+                margin-top: 25px;
+                ul{
+                    list-style-type: none;
+                    padding: 0;
+                    li{
+                        display: inline-block;
+                        margin-right: 5px;
+                        a{
+                            text-decoration: none;
+                            display: inline-block;
+                            width: 35px;
+                            height: 35px;
+                            line-height: 35px;
+                            color: #66676b;
+                            background-color: white;
+                            text-align: center;
+                            border-radius: 5px;
+                            transition: all 0.1s linear;
+                            i{
+                                font-size: 0.875rem;
+                            }
+                            &:hover{
+                                transform: translateY(-2px);
+                                transition: all 0.1s linear;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .menu{
+            ul{
+                list-style-type: none;
+                padding: 0;
+                li{
+                    line-height: 2.2;
+                    i{
+                        color: darken(white, 20%);
+                    }
+                    a{
+                        text-decoration: none;
+                        color: white;
+                        padding-left: 10px;
+                        display: inline-block;
+                        transition: all 0.2s linear;
+                        &:hover{
+                            transform: translateX(5px);
+                            color: darken(white, 15%);
+                            transition: all 0.2s linear;
+    
+                        }
+                    }
+                }
+            }
+        }
+        .copyright{
+            margin-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.09);
+            p{
+                margin: 40px 0;
+                text-align: center;     
+            }
+        }
+    }
+}
+%cardExtend{
+    .card{
+    border: none;
+    transition: all 0.1s linear;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07)!important;
+    margin-bottom: 3rem;
+    img{
+        border-radius: unset;
+    }
+    .card-body{
+        h5{
+            font-weight: 700!important; 
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: $headingColor;          
+            font-size: $textFont;  
+        }
+        p{
+            font-size: 1rem;
+            font-weight: 300;
+            line-height: 1.7;
+            color:$mainFontColor ;
+            font-weight: 400;
+        }
+        a{
+           text-transform: uppercase;
+           background-color: $mainColor; 
+           font-size: $btnFont;
+           font-weight: 600;
+           border: none;
+           padding: 0.6rem 1rem;
+           transition: all 0.1s linear;
+           &:hover{
+               transform: translateY(-2px);
+               transition: all 0.1s linear;
+           }
+        }
+    }
+    &:hover{
+        transform: translateY(-10px);
+        transition: all 0.1s linear;
+    }
+}
+}

@@ -1,0 +1,230 @@
+#userPanel{
+    font-family: $fontFamily;
+    @extend %myNavExtend;
+    @extend %introExtend;
+$bgColor1:#F4F5F7;
+$bgColor2:#C9F3E1;
+$bgColor3:#E5E8FA;
+$fontFamily:'Noto Sans TC', sans-serif;
+$fontColor1:rgb(50,50,93);
+$fontColor2:#8898AA;
+$fontColor3:#525F7F;
+$spanColor1:#1aae6f;
+$spanColor2:#03acca;
+$spanColor3:#2643e9;
+    %spanStyle{
+        text-transform: uppercase;
+        padding: 5px 15px;
+        border-radius: 20px;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    %myBtn{
+        background-color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        color:$mainColor;
+        box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);;
+        width: 23%;
+        display: inline-block;
+        text-align: center;
+        padding: 12px;
+        border-radius: 5px;
+        font-weight: 300;
+    }
+    %hover{
+        transform: translatey(-2px);
+        transition: translate 0.2s linear;
+    }
+    #dingloyPlace{
+        font-family:$fontFamily;
+        line-height: 1.5rem;
+        .content{
+            padding-top: 5rem;
+            p,.address p{
+                color: $fontColor2;
+                font-size: 13px;
+                letter-spacing: 0.75px;
+            }
+            .address h3, .text h3,.text h5{
+                font-weight: 600;
+                color: $fontColor1;
+            }
+            .address{
+                h3 span{
+                    @extend %spanStyle;
+                    color: $spanColor1;
+                    font-size: 14px;
+                }
+                span{
+                    @extend %spanStyle;
+                    background-color: $bgColor2;
+                    color: $spanColor2;
+                }
+            }
+            .buttons{
+                display: flex;
+                justify-content: space-between;
+                .active{
+                    background-color: $mainColor;
+                    color: white;
+                }
+                a{
+                    @extend %myBtn;
+                }
+            } 
+            .text{
+                .about, .location,.pricing,.reviews{
+                    display: none;
+                }
+                .myActive{
+                    display: block;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    padding: 3rem;
+                    width: 100%;
+                }}}}
+    #dingloyPlace .content .text .subject p, #dingloyPlace .content .text .info,#dingloyPlace .text .location p{
+        color: $fontColor1;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    #dingloyPlace .content .text {
+        .info{
+        font-size: 12px;
+        font-weight: 500;;
+    }
+    .features span{
+        @extend %spanStyle;
+        background-color: $bgColor3;
+        color: $spanColor3;
+    }
+    .location iframe{
+        width: 100%;
+        height: 300px;
+    }
+    .pricing .menu{
+        position: relative;
+        span{
+            position: absolute;
+            color: $fontColor2;
+            right: 0;
+            top: 50%;
+            transform: translatey(-50%);
+        }
+        h5{
+            font-size: 17px;
+        }
+    }
+    .reviews {
+        .img{
+            max-width: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            img{
+                max-width: 100%;
+            }
+        }
+        .comment {
+            h5{
+            color: $mainColor;
+        }
+        p:last-of-type{
+            color: $fontColor1;
+            font-weight: 300;
+            font-size: 14px;;
+        }
+        a{
+            @extend %myBtn;
+            background-color: $mainColor;
+            color: white;
+            font-size: 12px;
+            font-weight: 500;
+            // width: 15%;
+            padding: 5px;
+            transition: translate 0.2s linear;
+        }
+        a:hover{
+            @extend %hover;
+        }}}}
+    
+    // Book Now
+    #dingloyPlace .bookNow{
+        padding-top: 5rem;
+         a{
+        @extend %myBtn;
+        width: 100%;
+        color: white;
+        background-color: $mainColor;
+        font-weight: 500;
+        margin-bottom: 1.2rem;
+        transition: translate 0.2s linear;
+    }
+    a:hover{
+        @extend %hover;
+    }
+        input, select{
+        width: 100%;
+        margin-bottom: 1.2rem;
+        border: 1px solid rgba(50,151,211,.25);
+        padding: 10px 0;
+        border-radius: 5px;
+        color: $fontColor2;
+        font-size: 14px;
+    }
+    .people{
+        background-color: $bgColor1;
+        text-align:center;
+        padding: 1rem;
+        font-family: $fontFamily;
+        img{
+        widows: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 1.2rem;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); ;
+    }
+    h4{
+        color: $fontColor1;
+        font-weight: 700;
+    }
+    h5{
+        color: $mainColor;
+        font-weight: 600;
+        margin-bottom: 1.2rem;
+    }
+    p{
+        font-size: 14px;
+        color: $fontColor3;
+        line-height: 10px;
+    }}}
+    
+    @media screen and (max-width: 990px) {
+        .content{
+            width: 100%;;
+        }
+        #dingloyPlace .content .text .reviews .img{
+            width: 100%;
+        }
+      }
+      @media screen and (max-width: 770px) {
+        #dingloyPlace .content .buttons{
+            display: block;
+        }
+        #dingloyPlace .content .buttons a{
+            width: 100%;
+            margin-bottom:1rem ;
+        }
+        #dingloyPlace .content .text .reviews{
+            text-align: center;
+        }
+        #dingloyPlace .content .text .reviews .img{
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        }
+      }
+      @extend %footerExtend;
+}

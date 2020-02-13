@@ -1,0 +1,342 @@
+#layout{
+    font-family: $fontFamily;
+    @extend  %myNavExtend;
+    @extend %introExtend;
+    #content{
+        padding:3rem 0;
+        .icons{
+            div{
+                margin-right: 1rem;
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                background-color: white;
+                color: $mainColor;
+                text-align: center;
+                border-radius: 50%;
+                box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                cursor: pointer;
+            }
+        }
+        .select{
+            select{
+                padding: 10px;
+                border-radius: 3px;
+                color: #8897a7;
+            }
+        }
+        #grid{
+            .card{
+            border: none;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            margin-top: 1.5rem;
+            transition: transform 0.1s linear;
+            .image{
+                height: 140px;
+                overflow: hidden;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                img{
+                    width: 200%;
+                }
+            }
+            .card-body{
+                position: relative;
+                h3{
+                    color: $headingColor;
+                    margin-top: 1rem;
+                    font-size: 1rem;
+                    font-weight: 800;
+                }
+                .span{
+                    color: #2643e9;
+                    background-color: rgba(203,210,246,.5);
+                    border-radius: 30px;
+                    padding:3px 8px;
+                    font-size: 0.7rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                }
+                ul{
+                    margin-top: 1rem;
+                    padding: 0;
+                    list-style-type: none;
+                    li{
+                        display: inline-block;
+                        margin-right: 3px;
+                        img{
+                            width: 14px;
+                        }
+                    }
+                }
+            }
+            .heart{
+                position: absolute;
+                top: 5%;
+                right: 5%;
+                background-color: $mainColor;
+                color: white;
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+            }
+            &:hover{
+                transform: translateY(-5px);
+                transition: transform 0.1s linear;
+            }
+        }
+        }
+        #list{
+            display: none;
+            .card{
+                border: none;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+                margin-bottom: 2rem;
+                margin-top: 1.5rem;
+                transition: transform 0.1s linear;
+                .image{
+                    overflow: hidden;
+                    height: 231px;
+                    border-radius: 4px 0 0 4px;
+                    img{
+                        width: 400%;
+
+                    }
+                }
+                .card-body{
+                    position: relative;
+                    ul{
+                        margin-top: 1rem;
+                        padding: 0;
+                        list-style-type: none;
+                        li{
+                            display: inline-block;
+                            margin-right: 3px;
+                            img{
+                                width: 12px;
+                            }
+                        }
+                    }
+                    h3{
+                        color: $headingColor;
+                        margin-top: 1rem;
+                        font-size: 1rem;
+                        font-weight: 800;
+                    }
+                    p{
+
+                    }
+                    .open{
+                        position: absolute;
+                        top: 50%;
+                        right: 2%;
+                        transform: translateY(-50%);
+                        color: #2AB479;
+                        background-color: #C9F3E1;
+                        border-radius: 30px;
+                        padding:3px 8px;
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                    .span{
+                        color: #939396;
+                        background-color:#E5E8FA;
+                        border-radius: 30px;
+                        padding:3px 8px;
+                        font-size: 0.7rem;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                    }
+                    .heart{
+                        position: absolute;
+                        top: 5%;
+                        right: 2%;
+                        background-color: $mainColor;
+                        color: white;
+                        border-radius: 50%;
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                    }
+                }
+                &:hover{
+                    transform: translateX(5px);
+                    transition: transform 0.1s linear;
+                }
+            }
+            @media only screen and (max-width: 992px) {
+                .card{
+                    .image{
+                        img{
+                            width: 600%;
+                        }
+                    }
+                }
+            }
+            @media only screen and (max-width: 767px) {
+                .card{
+                    .image{
+                        height: 100%;
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .numbers{
+            ul{
+                list-style-type: none;
+                padding: 0;
+                li{
+                    display: inline-block;
+                    border: 1px solid #E4E7EB;
+                    margin-right: 0.5rem;
+                    width: 40px;
+                    height: 40px;
+                    line-height: 40px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: $headingColor;
+                    position: relative;
+                    transition: before 0.1s linear;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: #dee2e6; 
+                        border-radius: 50%;
+                        opacity: 0;
+                        transition: before 0.2s linear;
+
+                    }
+                    &:hover{
+                        &::before{
+                            opacity: 0.5;
+                        }
+                    }
+                }
+                .myActive{
+                    background-color: $mainColor;
+                    color: white;
+                }
+            }
+        }
+        .search{
+            form{
+                input, select{
+                    box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+                    border: 0;
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 1rem;
+                    color: #8898AA;
+                    &::placeholder{
+                        color: #8898AA;
+                    }
+                }
+                input[type=range]{
+                    box-shadow: unset;
+                }
+                label{
+                    color: rgb(103, 119, 138);
+                }
+                button{
+                    text-transform: uppercase;
+                    background-color: $mainColor; 
+                    font-size: $btnFont;
+                    font-weight: 600;
+                    border: none;
+                    padding: 0.6rem 1.3rem;
+                    transition: all 0.1s linear;
+                    border-radius: 3px;
+                    color: white;
+                    transition: transform 0.1s linear;
+                    margin-bottom: 2rem;
+                    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                    &:hover{
+                        transform: translateY(-2px);
+                        transition: transform 0.1s linear;
+                    }
+                }
+            }
+        }
+        .email{
+            background: linear-gradient(87deg,#fb6340 0,#fbb140 100%)!important;
+            border-radius: 5px;
+            padding: 2rem;
+            img{
+                margin: 0 auto;
+                display: block;
+            }
+            .text{
+                margin: 1rem 0;
+                text-align: center;
+                color: white;
+                h4{
+                    font-weight: 700;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+            input{
+                width: 100%;
+                border: none;
+                box-shadow: 0 1px 3px rgba(50,50,93,.15), 0 1px 0 rgba(0,0,0,.02);
+                padding: 10px;
+                border-radius: 3px;
+                margin-bottom: 1rem;
+            }
+            button{
+                margin: 0 auto;
+                display: block;text-transform: uppercase;
+                background-color: $mainColor; 
+                font-size: $btnFont;
+                font-weight: 600;
+                border: none;
+                padding: 0.6rem 1.3rem;
+                border-radius: 3px;
+                color: white;
+                transition: transform 0.1s linear;
+                box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
+                &:hover{
+                    transform: translateY(-2px);
+                    transition: transform 0.1s linear;
+                }
+                
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .col-lg-12{
+                display: block !important;
+                .select{
+                    select{
+                        width: 100%;
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+            .numbers{
+                ul{
+                    li{
+                        margin-right: 0.2rem;  
+                        width: 35px;
+                        height: 35px;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+    }
+    @extend %footerExtend;
+}
